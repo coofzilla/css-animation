@@ -1,13 +1,9 @@
 interface AppProps {
-  someProp?: any;
+  children?: React.ReactNode;
 }
 
-const App = ({ someProp }: AppProps) => {
-  return (
-    <div>
-      <h1>App</h1>
-    </div>
-  );
+const App = ({ children }: AppProps) => {
+  return <div>{children}</div>;
 };
 
 export default App;
