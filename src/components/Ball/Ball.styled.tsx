@@ -10,9 +10,10 @@ export const slideRight = keyframes`
 `;
 
 export const Ball = styled.div`
+  --fg-color: purple;
   height: 5vmin;
   width: 5vmin;
   border-radius: 50%;
-  background: radial-gradient(circle at bottom right, red, orange);
-  animation: ${slideRight} 1s linear infinite;
+  background-color: var(--fg-color);
+  animation: ${slideRight} var(--duration) var(--easing) infinite;
 `;

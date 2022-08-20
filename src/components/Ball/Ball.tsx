@@ -6,9 +6,10 @@ interface BallProps {
 
 const Ball = ({ someProp }: BallProps) => {
   return (
-    <StyledBall.Ball>
-      <div>.</div>
-    </StyledBall.Ball>
+    <div>
+      <div>CLICK ME</div>
+      <StyledBall.Ball />
+    </div>
   );
 };
 
