@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from 'styled-components/macro';
+import styled, { keyframes } from 'styled-components/macro';
 
 export const slideRight = keyframes`
   from {
@@ -10,10 +10,16 @@ export const slideRight = keyframes`
 `;
 
 export const Ball = styled.div`
-  --fg-color: purple;
   height: 5vmin;
   width: 5vmin;
+  left: 50vw;
   border-radius: 50%;
   background-color: var(--fg-color);
-  animation: ${slideRight} var(--duration) var(--easing) infinite;
+  transition-property: background transform;
+  transition-duration: 1s;
+
+  &:hover {
+    background: blue;
+    transform: scale(2);
+  }
 `;
